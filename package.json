@@ -1,0 +1,33 @@
+{
+	"name": "infosec-qa-boilerplate",
+	"version": "1.0.0",
+	"description": "",
+	"main": "index.js",
+	"scripts": {
+		"dev": "dotenv -- nodemon --exec babel-node server.js",
+		"test": "NODE_ENV=test dotenv -- nodemon server.js",
+		"start": "dotenv -- node server.js"
+	},
+	"keywords": [],
+	"author": "",
+	"license": "ISC",
+	"dependencies": {
+		"body-parser": "^1.19.0",
+		"chai": "^4.2.0",
+		"chai-http": "^4.3.0",
+		"cors": "^2.8.5",
+		"express": "^4.17.1",
+		"helmet": "^3.18.0",
+		"mocha": "^6.1.4",
+		"mongoose": "^5.5.11"
+	},
+	"devDependencies": {
+		"dotenv-cli": "^2.0.0",
+		"eslint": "^5.16.0",
+		"eslint-config-prettier": "^4.3.0",
+		"eslint-plugin-prettier": "^3.1.0",
+		"morgan": "^1.9.1",
+		"nodemon": "^1.19.1",
+		"prettier": "^1.17.1"
+	}
+}
